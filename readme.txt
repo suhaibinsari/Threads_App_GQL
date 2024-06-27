@@ -19,6 +19,8 @@ yarn tsc --init
 yarn add tsc-watch -D
 yarn add express
 yarn add graphql
+yarn add jsonwebtoken
+yarn add @types/jsonwebtoken -D
 yarn add @types/express -D
 yarn add @apollo/server
 yarn add prisma typescript ts-node @types/node -D
@@ -35,7 +37,7 @@ sudo systemctl status docker
 
 docker compose up
 
-docker compose up -d
+docker compose up -d (deattached mode)
 
 yarn add prisma typescript ts-node @types/node
 
@@ -63,4 +65,6 @@ npx prisma migrate dev --name (any name)
 
 select * from users
 
-\x expanded display 
+\x expanded display
+
+delete from users where 1=1
